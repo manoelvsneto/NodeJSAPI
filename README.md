@@ -10,3 +10,11 @@ CREATE TABLE Persons (
     Age INT,
     Email NVARCHAR(50)
 );
+
+
+# URL
+http://backend.archse.eng.br:32033/api-docs/
+
+# DOCKERHUB
+https://hub.docker.com/r/manoelvsneto/nodeapi
+
