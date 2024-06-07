@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend-deploymentnodeapi
+  labels:
+    app: backendnodeapi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: backendnodeapi
+  template:
+    metadata:
+      labels:
+        app: backendnodeapi
+    spec:
+      containers:
+        - name:  backendnodeapi
+          image:  manoelvsneto/nodeapi
+          ports:
+            - containerPort: 8080
+          env:
+            - name: DATABASE_CONNECTION_STRING
+              valueFrom:
+                configMapKeyRef:
+                  name: app-config
+                  key: DATABASE_CONNECTION_STRING
