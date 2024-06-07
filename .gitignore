@@ -56,8 +56,6 @@ jspm_packages/
 # Docker files
 docker-compose.yml
 
-# Swagger definition
-swagger.json
 
 # Mac system files
 .DS_Store
