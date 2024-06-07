@@ -7,8 +7,8 @@ spec:
     app: backendnodeapi
   ports:
     - name: http
-      port: 8080
-      targetPort: 8080
+      port: 3000
+      targetPort: 3000
       nodePort: 32033
       protocol: TCP
   type: NodePort
